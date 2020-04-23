@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    margin-top: 10px;
+    background-color: rgb(248, 249, 249);
+    text-align: center;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#jugadores {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.col {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    background-color: #A18262;
+    margin-top: 1px;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    padding-top: 15px;
+    border: solid #4B3621;
+    font-family: cursive;
+}
+
+#empezar {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: #6fa84b;
+    color: white;
+    border: #6fa84b;
+    font-family: cursive;
+}
+
+#nuevo {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: #3E5F8A;
+    color: white;
+    border: 0cm solid #3E5F8A;
+    font-family: cursive;
+}
+
+.turno {
+    display: inline-block;
+    border: 1px solid grey;
+    font-size: 15pt;
+    margin: 10px auto;
+    padding: 10px;
+    width: 228px;
+    text-align: center;
+    color: #4B3621;
+    font-family: cursive;
+}
+
+.resultado {
+    display: inline-block;
+    background-color: #EED09D;
+    font-size: 15pt;
+    margin: 10px auto;
+    padding: 10px;
+    width: 228px;
+    text-align: center;
+    color: #4B3621;
+    font-family: cursive;
+}
+
+.marcador {
+    display: block;
+    border: 1px solid grey;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: 110px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #4B3621;
+    font-family: cursive;
+    margin: 140px;
+}
+
+.class-x {
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.class-o {
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}

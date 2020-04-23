@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href=".\estilos.css">
+    <script type="text/javascript" src=".\script.js"></script>
+    <script type="text/javascript">
+        src = "js/jquery.min.js"
+    </script>
+    <title>Ta Te Ti - Programacion Avanzada</title>
+</head>
+
+<body>
+    <h1>Ta Te Ti</h1>
+
+    <div class="jugadores" id="jugadores">
+        <div>
+            <label for="">Jugador 1: </label>
+            <input type="text" id="jugador1"> <br>
+            <label for="">Seleccionar ficha Jugador 1: </label>
+
+            <select id="ficha" name="ficha" onchange="seleccionarFichas()">
+                
+                <option name="ficha" >X</option>
+                <option name="ficha" >O</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <label for="">Jugador 2: </label>
+            <input type="text" id="jugador2"> <br>
+        </div>
+
+    </div>
+    <br>
+    <div class="botones">
+        <button id="empezar" onclick="iniciarJuego()">¡Jugar!</button>
+        <button id="nuevo" onclick="jugarDeNuevo()">Nueva partida</button>
+    </div>
+
+    <div class="turno">
+        <label for="" id="turno"></label><br>
+    </div>
+
+    <div class="tablero" id="tablero">
+
+        <div>
+            <div class="col" id="0" onclick="celda(0)"></div>
+            <div class="col" id="1" onclick="celda(1)"></div>
+            <div class="col" id="2" onclick="celda(2)"></div>
+        </div>
+        <div>
+            <div class="col" id="3" onclick="celda(3)"></div>
+            <div class="col" id="4" onclick="celda(4)"></div>
+            <div class="col" id="5" onclick="celda(5)"></div>
+        </div>
+        <div>
+            <div class="col" id="6" onclick="celda(6)"></div>
+            <div class="col" id="7" onclick="celda(7)"></div>
+            <div class="col" id="8" onclick="celda(8)"></div>
+        </div>
+    </div>
+    <div class="resultado">
+        <label for="" id="resultado"></label><br>
+    </div>
+
+    <div class="marcador">
+        <div id="tab"><strong>Marcador:</strong></div>
+        <label>Ganados J1: </label>
+        <div id="ganadosJ1"></div>
+        <label>Ganados J2: </label>
+        <div id="ganadosJ2"></div>
+        <label>Empates: </label>
+        <div id="empate"></div>
+    </div>
+
+</body>
+
+</html>
